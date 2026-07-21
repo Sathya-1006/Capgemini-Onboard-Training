@@ -1,0 +1,196 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* Main Container */
+
+.container{
+
+    width:450px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation:fadeIn .5s ease-in-out;
+}
+
+/* Heading */
+
+h2{
+
+    text-align:center;
+    color:#1f3c88;
+    margin-bottom:25px;
+}
+
+/* Labels */
+
+label{
+
+    font-weight:500;
+    color:#333;
+}
+
+/* Inputs */
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date],
+textarea{
+
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+input:focus,
+textarea:focus{
+
+    border-color:#4A90E2;
+    box-shadow:0 0 8px rgba(74,144,226,.4);
+}
+
+/* Button */
+
+input[type=submit]{
+
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#1f3c88;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+input[type=submit]:hover{
+
+    background:#4A90E2;
+    transform:translateY(-2px);
+}
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+    color:#1f3c88;
+    font-weight:500;
+    transition:.3s;
+}
+
+a:hover{
+
+    color:#4A90E2;
+}
+
+/* Tables */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+table th{
+
+    background:#1f3c88;
+    color:white;
+    padding:12px;
+}
+
+table td{
+
+    padding:10px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+
+    background:#f5f8ff;
+}
+
+table tr:hover{
+
+    background:#eaf2ff;
+}
+
+/* Edit Button */
+
+.edit-btn{
+
+    background:#28a745;
+    color:white;
+    padding:6px 12px;
+    border-radius:5px;
+}
+
+/* Delete Button */
+
+.delete-btn{
+
+    background:#dc3545;
+    color:white;
+    padding:6px 12px;
+    border-radius:5px;
+}
+
+.edit-btn:hover{
+
+    background:#218838;
+    color:white;
+}
+
+.delete-btn:hover{
+
+    background:#c82333;
+    color:white;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
